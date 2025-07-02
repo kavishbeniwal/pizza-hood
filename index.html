@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Hood</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"><img src="images/logo 1.png"/a> </div>
+      
+      <nav class="nav" id="nav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Deals</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" class="cta">Order Now</a>
+      </nav>
+
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </div>
+  </header>
+
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const nav = document.getElementById("nav");
+
+    menuIcon.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+
+    <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Hot. Fresh. Delivered Fast.</h1>
+      <p>Delicious handcrafted pizzas made with love and the finest ingredients.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary">View Menu</a>
+        <a href="#" class="btn secondary">Get 20% Off</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Menu Highlights Section -->
+<section class="menu-section">
+  <div class="container">
+    <h2 class="section-title">Menu Highlights</h2>
+
+    <!-- Category Tabs -->
+    <div class="menu-tabs">
+      <button class="tab active" onclick="filterMenu('all')">All</button>
+      <button class="tab" onclick="filterMenu('veg')">Veg</button>
+      <button class="tab" onclick="filterMenu('nonveg')">Non-Veg</button>
+      <button class="tab" onclick="filterMenu('sides')">Sides</button>
+      <button class="tab" onclick="filterMenu('drinks')">Drinks</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-grid">
+      <div class="menu-card veg">
+        <img src="images/12.jpg" alt="Veg Pizza">
+        <h3>Garden Fresh</h3>
+        <p>Loaded with veggies & cheese.</p>
+        <span class="price">₹249</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card nonveg">
+        <img src="images/11.jpg" alt="Chicken Pizza">
+        <h3>Spicy Chicken</h3>
+        <p>Grilled chicken with chili flakes.</p>
+        <span class="price">₹299</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card sides">
+        <img src="images/7.jpg" alt="Garlic Bread">
+        <h3>Garlic Bread</h3>
+        <p>Cheesy, crispy, and buttery.</p>
+        <span class="price">₹129</span>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="menu-card drinks">
+        <img src="images/coca.jpg" alt="Cold Drink">
+        <h3>Cola</h3>
+        <p>Chilled soft drink.</p>
+        <span class="price">₹59</span>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="featured-specials">
+  <div class="container">
+    <h2>🔥 Featured Specials</h2>
+    <div class="specials-grid">
+      <div class="special-card">
+        <img src="images/3.jpg" alt="Pepperoni Blast">
+        <h3>Pepperoni Blast</h3>
+        <p>Cheesy, spicy, and topped with premium pepperoni slices.</p>
+        <span class="price">₹299</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="special-card">
+        <img src="images/5.jpg" alt="Veggie Supreme">
+        <h3>Veggie Supreme</h3>
+        <p>Loaded with fresh veggies and mozzarella cheese.</p>
+        <span class="price">₹249</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="special-card">
+        <img src="images/4.jpg" alt="BBQ Chicken Pizza">
+        <h3>BBQ Chicken</h3>
+        <p>Smoky BBQ chicken with caramelized onions & cheddar.</p>
+        <span class="price">₹349</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="why-choose">
+  <div class="container">
+    <h2 class="section-title">Why Choose <span>Pizza Hood?</span></h2>
+    <div class="features-grid">
+      <div class="feature">
+        <img src="images/Authentic Ingredients.jpg" alt="Fresh Ingredients Icon">
+        <h3>Authentic Ingredients</h3>
+        <p>Only the freshest, locally-sourced ingredients go into our pizzas.</p>
+      </div>
+      <div class="feature">
+        <img src="images/fast.avif" alt="Fast Delivery Icon">
+        <h3>30-Minute Delivery</h3>
+        <p>Your pizza delivered piping hot in under 30 minutes—guaranteed.</p>
+      </div>
+      <div class="feature">
+        <img src="images/5.jpg" alt="Custom Pizza Icon">
+        <h3>Customizable Pizzas</h3>
+        <p>Choose your crust, sauce, and toppings just the way you love it.</p>
+      </div>
+      <div class="feature">
+        <img src="images/ttt.jpg" alt="Affordable Icon">
+        <h3>Pocket-Friendly Prices</h3>
+        <p>Premium quality pizzas without breaking the bank.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      
+      <div class="testimonial-card">
+        <p>"The best pizza in town! Always hot and fresh. Pizza Hood never disappoints."</p>
+        <div class="customer-info">
+          <img src="images/p 1.webp" alt="Customer 1">
+          <div>
+            <h4>Ravi Mehra</h4>
+            <span>Verified Customer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"I love the customization options. Perfect for my picky taste. Highly recommended!"</p>
+        <div class="customer-info">
+          <img src="images/p2.jpg" alt="Customer 2">
+          <div>
+            <h4>Simran Kaur</h4>
+            <span>Loyal Customer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Fast delivery and mouth-watering taste. Pizza Hood has become our weekend ritual!"</p>
+        <div class="customer-info">
+          <img src="images/p3.jpg" alt="Customer 3">
+          <div>
+            <h4>Aryan Singh</h4>
+            <span>Frequent Buyer</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="about-us">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+          At <strong>Pizza Hood</strong>, we started with a simple dream — to serve authentic, mouth-watering pizzas made with love and fresh ingredients. 
+          What began as a small neighborhood kitchen is now a beloved name for pizza lovers across the city.
+        </p>
+        <p>
+          Every slice tells a story of passion, tradition, and flavor. From our hand-tossed dough to our signature sauces, everything is crafted in-house.
+        </p>
+        <p>
+          Join us on our delicious journey and discover why thousands choose Pizza Hood to satisfy their cravings.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/9.jpg" alt="Pizza Hood Story">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="location-delivery">
+  <div class="container">
+    <h2 class="section-title">Delivery Zones & Store Location</h2>
+    
+    <div class="info-grid">
+      <div class="info-text">
+        <h3>📍 Our Main Outlet</h3>
+        <p>
+          Pizza Hood near under lohe wali pani ki tanki, Nohar 335523 <br>
+          Open Daily: <strong>11:00 AM - 11:00 PM</strong><br>
+          Call: <a href="tel:+919999999999">+91  7877884200 </a>
+       <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <h2>🍕 Pizza Hood</h2>
+      <p>Your favorite slice of happiness, served hot.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 7877884200</a></p>
+      <p><strong>Email:</strong> <a href="mailto:order@pizzahood.com">order@pizzahood.com</a></p>
+      <p><strong>Hours:</strong> 10:00 AM - 11:00 PM</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+        <a href="#"><img src="images/t.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2
+ </p>
+
+        <h3>🚚 Delivery Areas</h3>
+<section class="cta-banner">
+  <div class="cta-container">
+    <h2>Craving Pizza? Let’s Fix That.</h2>
+    <p>Order now and enjoy hot, fresh pizza delivered to your door in 30 minutes!</p>
+    <a href="#menu" class="cta-button">Start Your Order</a>
+  </div>
+</section>
+<!-- Floating Cart Icon -->
+<div class="floating-cart" onclick="alert('Go to Cart!')">
+  🛒
+  <span class="cart-count">2</span>
+</div>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+
+</body>
+</html>
